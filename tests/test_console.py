@@ -110,7 +110,7 @@ def test_help(self):
     with patch("sys.stdout", new=StringIO()) as output:
         self.assertFalse(HBNBCommand().onecmd("help"))
         self.assertEqual(expected_output, output.getvalue().strip())
-```python
+
 class TestHBNBCommand_exit(unittest.TestCase):
     """Unittests for testing exiting from the HBNB command interpreter."""
 
