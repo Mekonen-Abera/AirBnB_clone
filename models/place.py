@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module defines the Place class."""
+"""Defining the Place classes"""
 from models.base_model import BaseModel
 
 
@@ -11,10 +11,10 @@ class Place(BaseModel):
         user_id (str): The User id.
         name (str): The name of the place.
         description (str): The description of the place.
-        number_of_rooms (int): The number of rooms of the place.
-        number_of_bathrooms (int): The number of bathrooms of the place.
-        max_guests (int): The maximum number of guests of the place.
-        price_per_night (int): The price by night of the place.
+        number_rooms (int): The number of rooms of the place.
+        number_bathrooms (int): The number of bathrooms of the place.
+        max_guest (int): The maximum number of guests of the place.
+        price_by_night (int): The price by night of the place.
         latitude (float): The latitude of the place.
         longitude (float): The longitude of the place.
         amenity_ids (list): A list of Amenity ids.
@@ -24,10 +24,10 @@ class Place(BaseModel):
     user_id = ""
     name = ""
     description = ""
-    number_of_rooms = 0
-    number_of_bathrooms = 0
-    max_guests = 0
-    price_per_night = 0
+    number_rooms = 0
+    number_bathrooms = 0
+    max_guest = 0
+    price_by_night = 0
     latitude = 0.0
     longitude = 0.0
     amenity_ids = []
